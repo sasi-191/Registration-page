@@ -54,7 +54,7 @@ function validate() {
         passerror.innerHTML = "";
     }
 
-    if (password.value != cpassword.value && password.value.length < 5) {
+    if (password.value != cpassword.value || password.value.length < 5) {
         cpasserror.innerHTML = "Password does not match"
     }
     else {
